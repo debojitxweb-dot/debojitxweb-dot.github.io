@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">Debojit</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Hi, I'm <span>Debojit</span></h1>
+    <p>Aspiring Web Developer 🚀</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student learning web development.  
+      I build clean, responsive websites using HTML, CSS and JavaScript.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+      <h3>Portfolio Website</h3>
+      <p>Personal responsive website built with HTML, CSS & JS.</p>
+    </div>
+
+    <div class="project-box">
+      <h3>Landing Page</h3>
+      <p>Modern landing page design with animations.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button onclick="sendMessage()">Send</button>
+    <p id="response"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Debojit | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
